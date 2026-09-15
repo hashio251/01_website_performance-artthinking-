@@ -212,7 +212,7 @@ PCだけでなく、スマートフォンやタブレットからも閲覧でき
 
 https://hashio251.github.io/01_website_performance-artthinking-/
 
-![サイトトップ](./assets/images/readme/site-top.png)
+![サイトトップ](./this-is-me.gif)
 
 ---
 
