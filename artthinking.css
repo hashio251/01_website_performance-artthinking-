@@ -446,4 +446,5 @@ footer {
         height: calc(100vh - 60px);
     }
     h2 { font-size: 2.2rem; }
+    .tooltip { left: 49% }
 }
