@@ -8,7 +8,7 @@
 
 ## Preview
 
-> ※ `assets/images/readme/site-top.png` にWebサイトのスクリーンショットを配置
+![THIS IS ME PROJECTの画像](./this-is-me.gif)
 
 ---
 
