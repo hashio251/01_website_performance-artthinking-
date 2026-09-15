@@ -4,30 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>THIS IS ME Project: Z軸</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="artthinking.css">
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Three.js -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js">
+    </script>
+
     <script type="importmap">
     {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js"
-        }
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js"
+      }
     }
-    </script>
+  </script>
 </head>
 
 <body>
 
-    <canvas id="background-canvas"><img src="./images/front.jpeg" alt=""></canvas>
+    <canvas id="background-canvas">
+        <img src="./assets/images/main/front.jpeg" alt="">
+    </canvas>
 
     <header>
-        <a href="#home" class="logo">THIS IS ME PROJECT</a>
+        <a href="#home" class="logo">
+            THIS IS ME PROJECT
+        </a>
+
         <input type="checkbox" id="nav-toggle">
+
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -39,484 +54,694 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <label for="nav-toggle" class="hamburger">&#9776;</label>
+
+        <label for="nav-toggle" class="hamburger">
+            &#9776;
+        </label>
     </header>
+
     <main>
+
+        <!-- HOME -->
         <section id="home" class="container">
             <div class="home-layout">
+
                 <div id="artwork-container"></div>
+
                 <div id="home-text-content">
                     <p>THIS IS ME PROJECT</p>
                     <h2>Z-AXIS</h2>
                 </div>
+
             </div>
         </section>
 
+
+        <!-- ABOUT -->
         <section id="about" class="container">
             <h2>ABOUT OPUS</h2>
+
             <div class="card">
                 <h3>CONCEPT</h3>
-                <p>プロジェクトの「THIS IS
-                    ME」というテーマについて、今までの自分自身を振り返りながら創作する。<br>今は使っていない様々なジャンルの私物を組み合わせ形作っていくことで、自分自身の歴史や人生観を表現する。<br>様々な要素が交わり合うことで自分のアイデンティティなどを表現する。
+
+                <p>
+                    プロジェクトの「THIS IS ME」というテーマについて、
+                    今までの自分自身を振り返りながら創作する。<br>
+
+                    今は使っていない様々なジャンルの私物を組み合わせ形作っていくことで、
+                    自分自身の歴史や人生観を表現する。<br>
+
+                    様々な要素が交わり合うことで自分のアイデンティティなどを表現する。
                 </p>
             </div>
+
             <div class="card">
                 <h3>WHAT IS "Z軸"?</h3>
-                <p>人は、時間(X軸)と好きなもの(Y軸)が交差した平面的な存在じゃない。<br>そこには経験や感情が積み重なった「厚み」、つまり『Z軸』がある。そして、私たちが『Z世代』と呼ばれること。<br>その複雑な世代性。２つの意味を込めたのが、この作品『Z軸』。
+
+                <p>
+                    人は、時間(X軸)と好きなもの(Y軸)が交差した平面的な存在じゃない。<br>
+
+                    そこには経験や感情が積み重なった「厚み」、
+                    つまり『Z軸』がある。<br>
+
+                    そして、私たちが『Z世代』と呼ばれること。<br>
+
+                    その複雑な世代性。
+                    ２つの意味を込めたのが、この作品『Z軸』。
                 </p>
             </div>
+
             <div class="card">
                 <h3>技法</h3>
-                <p>アクリル絵具、油性マーカー、毛糸、既製品（ガチャガチャ、キーホルダー、アクセサリー、衣類、CDケース等）を使用したミクストメディア。<br>主に、今は使わなくなってしまったものたちをかき集め、「THIS
-                    IS ME」を表現。<br>キャンバスを土台に、様々なオブジェクトをコラージュ、アッサンブラージュの技法で構成。</p>
+
+                <p>
+                    アクリル絵具、油性マーカー、毛糸、既製品
+                    （ガチャガチャ、キーホルダー、アクセサリー、衣類、CDケース等）
+                    を使用したミクストメディア。<br>
+
+                    主に、今は使わなくなってしまったものたちをかき集め、
+                    「THIS IS ME」を表現。<br>
+
+                    キャンバスを土台に、様々なオブジェクトをコラージュ、
+                    アッサンブラージュの技法で構成。
+                </p>
             </div>
+
         </section>
 
+
+        <!-- SURFACE -->
         <section id="surface" class="container">
             <h2>FRONT SIDE(外側の自己)</h2>
+
             <div class="card">
-                <p>作品の表面は、他者からも見える「私」。<br>頭の中を埋め尽くす好きなモノの混沌（ラーメン丼）、実際に着ていた服で創作した身体部分、完璧じゃない自分を表現したディテール（タグなど）。<br>アクティブな私らしさを表現。
+                <p>
+                    作品の表面は、他者からも見える「私」。<br>
+
+                    頭の中を埋め尽くす好きなモノの混沌（ラーメン丼）、
+                    実際に着ていた服で創作した身体部分、
+                    完璧じゃない自分を表現したディテール（タグなど）。<br>
+
+                    アクティブな私らしさを表現。
                 </p>
             </div>
         </section>
 
+
+        <!-- INNER WORLD -->
         <section id="inner-world" class="container">
             <h2>BACK SIDE(内側の自己)</h2>
+
             <div class="card">
-                <p>作品の裏面は、他者からは見えない「私」の内面。<br>中学時代に聴き続けたCDケースの中に詰め込んだ故郷の記憶。<br>パーソナルで、内省的な心の奥を表現。</p>
+                <p>
+                    作品の裏面は、他者からは見えない「私」の内面。<br>
+
+                    中学時代に聴き続けたCDケースの中に詰め込んだ故郷の記憶。<br>
+
+                    パーソナルで、内省的な心の奥を表現。
+                </p>
             </div>
         </section>
 
+
+        <!-- PROCESS -->
         <section id="process" class="container">
             <h2>PROCESS</h2>
+
             <ol class="process-list">
-                <li><strong>STEP 1</strong>アクリル絵具を使用し、青と緑を基調とした背景をキャンバスに描く。
-                    <span
-                        class="tooltip">▼創作の原点▼<br><br><img src="./images/step1.jpg" alt=""><br><br>中学生の時に初めて美術館でモネを見てインスピレーションを受けたのが、始まり。<br>中学生の時に美術館で出会い、強烈なインスピレーションを受けたモネの絵画。自身のルーツである「絵を描くこと」で、その初期衝動を表現した。</span>
+
+                <li>
+                    <strong>STEP 1</strong>
+                    アクリル絵具を使用し、青と緑を基調とした背景をキャンバスに描く。
+
+                    <span class="tooltip">
+                        ▼創作の原点▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step01.jpg" alt="">
+
+                        <br><br>
+
+                        中学生の時に初めて美術館でモネを見てインスピレーションを受けたのが、
+                        始まり。<br>
+
+                        中学生の時に美術館で出会い、
+                        強烈なインスピレーションを受けたモネの絵画。
+
+                        自身のルーツである「絵を描くこと」で、
+                        その初期衝動を表現した。
+                    </span>
                 </li>
 
-                <li><strong>STEP 2</strong>白いお椀の周囲に、赤い油性マーカーで雷紋を手描き。
-                    <span class="tooltip">▼アイデンティティの一部▼<br><br><img src="./images/step2.jpg" alt=""><br><br>中学時代からのソウルフードであるラーメンは、欠かせない要素。</span>
+
+                <li>
+                    <strong>STEP 2</strong>
+                    白いお椀の周囲に、赤い油性マーカーで雷紋を手描き。
+
+                    <span class="tooltip">
+                        ▼アイデンティティの一部▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step02.jpg" alt="">
+
+                        <br><br>
+
+                        中学時代からのソウルフードであるラーメンは、
+                        欠かせない要素。
+                    </span>
                 </li>
 
-                <li><strong>STEP 3</strong>お椀の中に、麺に見立てた黄色い毛糸を入れる。
-                    <span class="tooltip">▼既成概念からの解放▼<br><br><img src="./images/step3.jpg" alt=""><br><br>本物を使うのではなく、温かみのある毛糸という異素材で「麺」を表現することで、自分らしいユニークな視点を加えた。</span>
+
+                <li>
+                    <strong>STEP 3</strong>
+                    お椀の中に、麺に見立てた黄色い毛糸を入れる。
+
+                    <span class="tooltip">
+                        ▼既成概念からの解放▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step03.jpg" alt="">
+
+                        <br><br>
+
+                        本物を使うのではなく、
+                        温かみのある毛糸という異素材で「麺」を表現することで、
+                        自分らしいユニークな視点を加えた。
+                    </span>
                 </li>
 
-                <li><strong>STEP 4</strong>お椀の中の毛糸の上に、ミニチュアの玩具やキーホルダーをラーメンの「具」に見立て、グルーガンで接着。
-                    <span
-                        class="tooltip">▼記憶の断片化▼<br><br><img src="./images/step4.jpg" alt=""><br><br>一つ一つのガチャガチャは、その時々の私の「好き」や熱中したことの記憶。それらを具材として載せることで、自身の歴史そのものを可視化した。<br>うにが苦手なので隠すような配置にして下に埋め込んだ。</span>
+
+                <li>
+                    <strong>STEP 4</strong>
+                    お椀の中の毛糸の上に、
+                    ミニチュアの玩具やキーホルダーをラーメンの「具」に見立て、
+                    グルーガンで接着。
+
+                    <span class="tooltip">
+                        ▼記憶の断片化▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step04.jpg" alt="">
+
+                        <br><br>
+
+                        一つ一つのガチャガチャは、
+                        その時々の私の「好き」や熱中したことの記憶。
+
+                        それらを具材として載せることで、
+                        自身の歴史そのものを可視化した。<br>
+
+                        うにが苦手なので隠すような配置にして下に埋め込んだ。
+                    </span>
                 </li>
 
-                <li><strong>STEP 5</strong>背景を描いたキャンバスに穴を開け、お椀を上部に挿入・固定。
-                    <span class="tooltip">▼脳内の具現化▼<br><br><img src="./images/step5.jpg" alt=""><br><br>制作したラーメン丼は、アイデアの源泉である自身の「頭部」。私の脳内が、好きなものや今までの歴史を表現している。</span>
+
+                <li>
+                    <strong>STEP 5</strong>
+                    背景を描いたキャンバスに穴を開け、
+                    お椀を上部に挿入・固定。
+
+                    <span class="tooltip">
+                        ▼脳内の具現化▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step05.jpg" alt="">
+
+                        <br><br>
+
+                        制作したラーメン丼は、
+                        アイデアの源泉である自身の「頭部」。
+
+                        私の脳内が、
+                        好きなものや今までの歴史を表現している。
+                    </span>
                 </li>
 
-                <li><strong>STEP 6</strong>お椀の下に、ネックレスを首の形に丸めてグルーガンで接着。
-                    <span class="tooltip">▼「好き」による自己形成▼<br><br><img src="./images/step6.jpg" alt=""><br><br>頭部（脳）と身体を繋ぐ首に、愛用ブランドである「WHO'S WHO
-                        gallery(フーズフーギャラリー)」のアクセサリーを使用。その「頭部」と「体」を繋げる「首」の要素として接着。</span>
+
+                <li>
+                    <strong>STEP 6</strong>
+                    お椀の下に、
+                    ネックレスを首の形に丸めてグルーガンで接着。
+
+                    <span class="tooltip">
+                        ▼「好き」による自己形成▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step06.jpg" alt="">
+
+                        <br><br>
+
+                        頭部（脳）と身体を繋ぐ首に、
+                        愛用ブランドである
+                        「WHO'S WHO gallery(フーズフーギャラリー)」
+                        のアクセサリーを使用。
+
+                        その「頭部」と「体」を繋げる
+                        「首」の要素として接着。
+                    </span>
                 </li>
 
-                <li><strong>STEP 7</strong>実際に着ていた服を「身体」として立体的に構成。裁断した黒い衣服を、内部に切れ端を詰めて立体感を出しながら、身体としてキャンバスに接着。
-                    <span
-                        class="tooltip">▼自己の投影▼<br><br><img src="./images/step7.jpg" alt=""><br><br>実際に着用していた「JENASIS」の服を「身体」として使うことで、作品にリアルな自分自身を投影。内部に切れ端を詰めたのは、外面からは見えない厚み（Z軸）を物理的に表現するため。</span>
+
+                <li>
+                    <strong>STEP 7</strong>
+                    実際に着ていた服を「身体」として立体的に構成。
+
+                    裁断した黒い衣服を、
+                    内部に切れ端を詰めて立体感を出しながら、
+                    身体としてキャンバスに接着。
+
+                    <span class="tooltip">
+                        ▼自己の投影▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step07.jpg" alt="">
+
+                        <br><br>
+
+                        実際に着用していた「JENASIS」の服を
+                        「身体」として使うことで、
+                        作品にリアルな自分自身を投影。
+
+                        内部に切れ端を詰めたのは、
+                        外面からは見えない厚み（Z軸）を
+                        物理的に表現するため。
+                    </span>
                 </li>
 
-                <li><strong>STEP 8</strong>衣服から切り取ったブランドタグを、キャンバスの端に接着した。服のタグをあえて見える位置に貼り、おっちょこちょいな一面を表現。
-                    <span class="tooltip"><br><br><img src="./images/step8.jpg" alt=""><br>▼欠点の肯定▼<br>通常は隠す「タグ」をあえて見せることで、完璧ではない自分のおっちょこちょいな一面を肯定的に表現した。完璧ではないところも、私の一面。</span>
+
+                <li>
+                    <strong>STEP 8</strong>
+                    衣服から切り取ったブランドタグを、
+                    キャンバスの端に接着した。
+
+                    服のタグをあえて見える位置に貼り、
+                    おっちょこちょいな一面を表現。
+
+                    <span class="tooltip">
+                        <br><br>
+
+                        <img src="./assets/images/process/step08.jpg" alt="">
+
+                        <br>
+
+                        ▼欠点の肯定▼
+                        <br>
+
+                        通常は隠す「タグ」をあえて見せることで、
+                        完璧ではない自分のおっちょこちょいな一面を
+                        肯定的に表現した。
+
+                        完璧ではないところも、私の一面。
+                    </span>
                 </li>
 
-                <li><strong>STEP 9</strong>ラーメンのキーホルダーを「見える臓器」として身体に接着。身体に見立てた衣服の上に、ラーメンのミニチュアキーホルダーを接着。
-                    <span class="tooltip">▼エネルギー源の可視化▼<br><br><img src="./images/step9.jpg" alt=""><br><br>「自分の身体はラーメンでできている」という感覚を、「見える臓器」として具現化した。</span>
+
+                <li>
+                    <strong>STEP 9</strong>
+                    ラーメンのキーホルダーを
+                    「見える臓器」として身体に接着。
+
+                    身体に見立てた衣服の上に、
+                    ラーメンのミニチュアキーホルダーを接着。
+
+                    <span class="tooltip">
+                        ▼エネルギー源の可視化▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step09.jpg" alt="">
+
+                        <br><br>
+
+                        「自分の身体はラーメンでできている」
+                        という感覚を、
+                        「見える臓器」として具現化した。
+                    </span>
                 </li>
 
-                <li><strong>STEP 10</strong>「GRAND GARAM」という銘柄のタバコの箱を接着。
-                    <span class="tooltip">▼個性の象徴▼<br><br><img src="./images/step10.jpg" alt=""><br><br></span>
+
+                <li>
+                    <strong>STEP 10</strong>
+                    「GRAND GARAM」という銘柄のタバコの箱を接着。
+
+                    <span class="tooltip">
+                        ▼個性の象徴▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step10.jpg" alt="">
+
+                        <br><br>
+                    </span>
                 </li>
 
-                <li><strong>STEP 11</strong>余った隙間を金具で埋め尽くし、マキシマリストな自分を表現。
-                    <span class="tooltip">▼マキシマリストの美学▼<br><br><img src="./images/step11.jpg" alt=""><br><br>モノで溢れている自身の性質を表現するため、余白を徹底的に埋め尽くした。</span>
+
+                <li>
+                    <strong>STEP 11</strong>
+                    余った隙間を金具で埋め尽くし、
+                    マキシマリストな自分を表現。
+
+                    <span class="tooltip">
+                        ▼マキシマリストの美学▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step11.jpg" alt="">
+
+                        <br><br>
+
+                        モノで溢れている自身の性質を表現するため、
+                        余白を徹底的に埋め尽くした。
+                    </span>
                 </li>
 
-                <li><strong>STEP 12</strong>キャンバスの全ての側面にデコシールを貼り、隙間を切れ端で埋める。
-                    <span class="tooltip">▼日常とアートの融合▼<br><br><img src="./images/step12.jpg" alt=""><br><br>傘の盗難防止という日常のサバイバル術も、自分を形成するユニークな要素として作品に取り込んだ。</span>
+
+                <li>
+                    <strong>STEP 12</strong>
+                    キャンバスの全ての側面にデコシールを貼り、
+                    隙間を切れ端で埋める。
+
+                    <span class="tooltip">
+                        ▼日常とアートの融合▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step12.jpg" alt="">
+
+                        <br><br>
+
+                        傘の盗難防止という日常のサバイバル術も、
+                        自分を形成するユニークな要素として作品に取り込んだ。
+                    </span>
                 </li>
 
-                <li><strong>STEP 13</strong>メインキャンバスの裏側に、一回り小さいキャンバスをグルーガンで接着。
-                    <span class="tooltip">▼内面世界の入り口▼<br><br><img src="./images/step13.jpg" alt=""><br><br>作品の裏側は、他者からは見えない「内面」を表現するための、もう一つの舞台である。</span>
+
+                <li>
+                    <strong>STEP 13</strong>
+                    メインキャンバスの裏側に、
+                    一回り小さいキャンバスをグルーガンで接着。
+
+                    <span class="tooltip">
+                        ▼内面世界の入り口▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step13.jpg" alt="">
+
+                        <br><br>
+
+                        作品の裏側は、
+                        他者からは見えない「内面」を表現するための、
+                        もう一つの舞台である。
+                    </span>
                 </li>
 
-                <li><strong>STEP 14</strong> 裏面のキャンバスを、黒のアクリル絵具で塗装。
-                    <span
-                        class="tooltip">▼深層心理の色▼<br><br><img src="./images/step14.jpg" alt=""><br><br>黒という色は、「他の色に左右されない・様々な色が組み合わさってできている」という面から、自分自身にも当てはまる特性だと思い、黒い背景に。他の色に左右されないというのは、自分自身の好きなことをしたり、自分の意見を持ったりすること。様々な色が組み合わさってるというのは、好奇心旺盛で、色々な体験をしてきたということ。</span>
+
+                <li>
+                    <strong>STEP 14</strong>
+                    裏面のキャンバスを、
+                    黒のアクリル絵具で塗装。
+
+                    <span class="tooltip">
+                        ▼深層心理の色▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step14.jpg" alt="">
+
+                        <br><br>
+
+                        黒という色は、
+                        「他の色に左右されない・様々な色が組み合わさってできている」
+                        という面から、
+                        自分自身にも当てはまる特性だと思い、
+                        黒い背景に。
+
+                        他の色に左右されないというのは、
+                        自分自身の好きなことをしたり、
+                        自分の意見を持ったりすること。
+
+                        様々な色が組み合わさってるというのは、
+                        好奇心旺盛で、
+                        色々な体験をしてきたということ。
+                    </span>
                 </li>
 
-                <li><strong>STEP 15</strong>「変身、成長、美しさ、自由、魂、幸運」の象徴である蝶の絵を模写し、黒いキャンバスの上に、描く。
-                    <span class="tooltip">▼消えないアイデンティティ▼<br><br><img src="./images/step15.jpg" alt=""><br><br>自分のアイデンティティの一つ。</span>
+
+                <li>
+                    <strong>STEP 15</strong>
+                    「変身、成長、美しさ、自由、魂、幸運」
+                    の象徴である蝶の絵を模写し、
+                    黒いキャンバスの上に描く。
+
+                    <span class="tooltip">
+                        ▼消えないアイデンティティ▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step15.jpg" alt="">
+
+                        <br><br>
+
+                        自分のアイデンティティの一つ。
+                    </span>
                 </li>
 
-                <li><strong>STEP 16</strong>蝶の絵の周囲に、造花の花びらを外側から接着。
-                    <span class="tooltip">▼心象風景▼<br><br><img src="./images/step16.jpg" alt=""><br><br>幼い頃から好きだった花は、蝶（アイデンティティ）と密接に結びつく、心の中の原風景である。</span>
+
+                <li>
+                    <strong>STEP 16</strong>
+                    蝶の絵の周囲に、
+                    造花の花びらを外側から接着。
+
+                    <span class="tooltip">
+                        ▼心象風景▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step16.jpg" alt="">
+
+                        <br><br>
+
+                        幼い頃から好きだった花は、
+                        蝶（アイデンティティ）と密接に結びつく、
+                        心の中の原風景である。
+                    </span>
                 </li>
 
-                <li><strong>STEP 17</strong>裏面キャンバスの下半分に、CDケースをそのまま接着した。中学時代の思い出のCDケースを「記憶装置」として接着。
-                    <span class="tooltip">▼記憶のタイムカプセル▼<br><br><img src="./images/step17.jpg" alt=""><br><br>今は使われなくなったCDケースは、過去の記憶を封印した媒体。風化していくメディアに、自身の歴史を重ね合わせた。</span>
+
+                <li>
+                    <strong>STEP 17</strong>
+                    裏面キャンバスの下半分に、
+                    CDケースをそのまま接着した。
+
+                    中学時代の思い出のCDケースを
+                    「記憶装置」として接着。
+
+                    <span class="tooltip">
+                        ▼記憶のタイムカプセル▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step17.jpg" alt="">
+
+                        <br><br>
+
+                        今は使われなくなったCDケースは、
+                        過去の記憶を封印した媒体。
+
+                        風化していくメディアに、
+                        自身の歴史を重ね合わせた。
+                    </span>
                 </li>
 
-                <li><strong>STEP 18</strong>CDの歌詞カードを切り取り、作品の表面・裏面の各所にコラージュ。
-                    <span class="tooltip">▼思考の断片▼<br><br><img src="./images/step18.jpg" alt=""><br><br>音楽や歌詞もまた、私の思考や感情（Z軸）を形成する重要な要素であることを示している。</span>
+
+                <li>
+                    <strong>STEP 18</strong>
+                    CDの歌詞カードを切り取り、
+                    作品の表面・裏面の各所にコラージュ。
+
+                    <span class="tooltip">
+                        ▼思考の断片▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step18.jpg" alt="">
+
+                        <br><br>
+
+                        音楽や歌詞もまた、
+                        私の思考や感情（Z軸）を形成する
+                        重要な要素であることを示している。
+                    </span>
                 </li>
 
-                <li><strong>STEP 19</strong>CDケースの内部に、モネの絵画が印刷された便箋を貼り付ける。
-                    <span
-                        class="tooltip">▼ルーツの在り処▼<br><br><img src="./images/step19.jpg" alt=""><br><br>記憶のタイムカプセル（CD）の中に、自身の原風景（故郷）と創作の原点（モネ）を忍ばせることで、心の奥にあるルーツを表現した。</span>
+
+                <li>
+                    <strong>STEP 19</strong>
+                    CDケースの内部に、
+                    モネの絵画が印刷された便箋を貼り付ける。
+
+                    <span class="tooltip">
+                        ▼ルーツの在り処▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step19.jpg" alt="">
+
+                        <br><br>
+
+                        記憶のタイムカプセル（CD）の中に、
+                        自身の原風景（故郷）と創作の原点（モネ）を
+                        忍ばせることで、
+                        心の奥にあるルーツを表現した。
+                    </span>
                 </li>
 
-                <li><strong>STEP 20</strong>蝶の絵と花びらの境界線を、カラーセロファンで縁取るように接着。
-                    <span
-                        class="tooltip">▼インスピレーションの積層▼<br><br><img src="./images/step20.jpg" alt=""><br><br>過去に影響を受けたアーティスト（オラファー・エリアソン）の作品の一つの記憶もまた、今の私を形成している要素の一つとして取り入れた。</span>
+
+                <li>
+                    <strong>STEP 20</strong>
+                    蝶の絵と花びらの境界線を、
+                    カラーセロファンで縁取るように接着。
+
+                    <span class="tooltip">
+                        ▼インスピレーションの積層▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step20.jpg" alt="">
+
+                        <br><br>
+
+                        過去に影響を受けたアーティスト
+                        （オラファー・エリアソン）の作品の一つの記憶もまた、
+                        今の私を形成している要素の一つとして取り入れた。
+                    </span>
                 </li>
 
-                <li><strong>STEP 21</strong>作品の全ての表面を、仕上げにニスでコーティング。
-                    <span
-                        class="tooltip">▼混沌の統合▼<br><br><img src="./images/step21.jpg" alt=""><br><br>これまで表現してきた、表も裏も、過去も現在も、ポジティブもネガティブも含む全ての要素を、ニスで塗り固めることで「これが今の私である」と統合し、肯定する行為。</span>
+
+                <li>
+                    <strong>STEP 21</strong>
+                    作品の全ての表面を、
+                    仕上げにニスでコーティング。
+
+                    <span class="tooltip">
+                        ▼混沌の統合▼
+                        <br><br>
+
+                        <img src="./assets/images/process/step21.jpg" alt="">
+
+                        <br><br>
+
+                        これまで表現してきた、
+                        表も裏も、過去も現在も、
+                        ポジティブもネガティブも含む全ての要素を、
+                        ニスで塗り固めることで
+                        「これが今の私である」と統合し、
+                        肯定する行為。
+                    </span>
                 </li>
+
             </ol>
         </section>
 
+
+        <!-- GALLERY -->
         <section id="gallery" class="container">
             <h2>GALLERY</h2>
+
             <div class="marquee-container">
+
                 <div class="marquee-content">
+
                     <div class="marquee-item">
-                        <img src="./images/garally1.jpeg" alt="ギャラリー画像1"
+
+                        <img src="./assets/images/gallery/gallery01.jpeg" alt="ギャラリー画像1"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+1';">
-                        <img src="./images/garally2.jpeg" alt="ギャラリー画像2"
+
+                        <img src="./assets/images/gallery/gallery02.jpeg" alt="ギャラリー画像2"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Back+Side';">
-                        <img src="./images/garally3.jpeg" alt="ギャラリー画像3"
+
+                        <img src="./assets/images/gallery/gallery03.jpeg" alt="ギャラリー画像3"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+3';">
-                        <img src="./images/garally4.jpeg" alt="ギャラリー画像4"
+
+                        <img src="./assets/images/gallery/gallery04.jpeg" alt="ギャラリー画像4"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+4';">
-                        <img src="./images/garally5.jpeg" alt="ギャラリー画像5"
+
+                        <img src="./assets/images/gallery/gallery05.jpeg" alt="ギャラリー画像5"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+5';">
-                        <img src="./images/garally6.jpeg" alt="ギャラリー画像6"
+
+                        <img src="./assets/images/gallery/gallery06.jpeg" alt="ギャラリー画像6"
                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+6';">
+
                     </div>
+
+
                     <div class="marquee-item" aria-hidden="true">
-                        <img src="./images/garally1.jpeg" alt="ギャラリー画像1"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+1';">
-                        <img src="./images/garally2.jpeg" alt="ギャラリー画像2"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Back+Side';">
-                        <img src="./images/garally3.jpeg" alt="ギャラリー画像3"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+3';">
-                        <img src="./images/garally4.jpeg" alt="ギャラリー画像4"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+4';">
-                        <img src="./images/garally5.jpeg" alt="ギャラリー画像5"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+5';">
-                        <img src="./images/garally6.jpeg" alt="ギャラリー画像6"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e8f0/465c8b?text=Image+6';">
+
+                        <img src="./assets/images/gallery/gallery01.jpeg" alt="">
+
+                        <img src="./assets/images/gallery/gallery02.jpeg" alt="">
+
+                        <img src="./assets/images/gallery/gallery03.jpeg" alt="">
+
+                        <img src="./assets/images/gallery/gallery04.jpeg" alt="">
+
+                        <img src="./assets/images/gallery/gallery05.jpeg" alt="">
+
+                        <img src="./assets/images/gallery/gallery06.jpeg" alt="">
+
                     </div>
+
                 </div>
             </div>
+
         </section>
 
 
+        <!-- CONTACT -->
         <section id="contact" class="container">
             <h2>CONTACT</h2>
+
             <div class="card">
-                <p>作品に関するお問い合わせや、その他のご連絡はインスタグラムのDMまでお願いします。</p>
+
+                <p>
+                    作品に関するお問い合わせや、
+                    その他のご連絡はインスタグラムのDMまでお願いします。
+                </p>
+
                 <a class="insta-link" href="https://www.instagram.com/08______gs" target="_blank"
-                    rel="noopener noreferrer" color="black">
-                    <img src="./images/Instagram.png" alt="Instagram" width="32" height="32"
-                        style="vertical-align: middle; border-radius: 6px;"> YUKA HASHIO
+                    rel="noopener noreferrer">
+                    <img src="./assets/images/ui/instagram.png" alt="Instagram" width="32" height="32"
+                        style="vertical-align: middle; border-radius: 6px;">
+
+                    YUKA HASHIO
                 </a>
+
             </div>
         </section>
 
+
+        <!-- CONCLUSION -->
         <section id="conclusion" class="container">
             <div class="card">
+
                 <p style="font-size: 1rem; font-weight: bold; line-height: 2; text-align: center;">
-                    楽しいことも、好きなことも、ちょっと変なクセも、過去の思い出も、全部を表現。<br>
-                    今ではガラクタになってしまっているものを中心に、形ある媒体として、様々な素材のアイテムを活用し、「自分自身」を3D化。<br>
-                    これが、私の『Z軸』であり、THIS IS ME。今の自分を形作ってきた過程の一部を表現。
+                    楽しいことも、好きなことも、ちょっと変なクセも、
+                    過去の思い出も、全部を表現。<br>
+
+                    今ではガラクタになってしまっているものを中心に、
+                    形ある媒体として、様々な素材のアイテムを活用し、
+                    「自分自身」を3D化。<br>
+
+                    これが、私の『Z軸』であり、THIS IS ME。
+                    今の自分を形作ってきた過程の一部を表現。
                 </p>
+
             </div>
         </section>
+
     </main>
 
+
     <footer>
-        <p>&copy; 2025 YUKA HASHIO. All rights reserved.</p>
+        <p>
+            &copy; 2025 YUKA HASHIO. All rights reserved.
+        </p>
     </footer>
 
-    <script type="module">
-        import * as THREE from 'three';
 
-        // --- 3Dスクリプト ---
-        const container = document.getElementById('artwork-container');
-
-        if (container) {
-            const scene = new THREE.Scene();
-            const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-
-            renderer.setSize(container.clientWidth, container.clientHeight);
-            renderer.setPixelRatio(window.devicePixelRatio);
-            container.appendChild(renderer.domElement);
-
-            const textureLoader = new THREE.TextureLoader();
-
-            const frontTexture = textureLoader.load('./images/front.jpeg',
-                () => { console.log('Front texture loaded successfully'); },
-                undefined,
-                (error) => { console.error('Error loading front texture:', error); }
-            );
-
-
-            const rightTexture = textureLoader.load('./images/right.jpg');
-            const leftTexture = textureLoader.load('./images/left.jpg');
-            const topTexture = textureLoader.load('./images/top.jpg');
-            const bottomTexture = textureLoader.load('./images/bottom.jpg');
-
-            const backTexture = textureLoader.load('./images/back.jpeg',
-                () => { console.log('Back texture loaded successfully'); },
-                undefined,
-                (error) => {
-                    console.error('Error loading back texture:', error);
-                    const canvas = document.createElement('canvas');
-                    canvas.width = 512;
-                    canvas.height = 512;
-                    const context = canvas.getContext('2d');
-                    context.fillStyle = '#ccc';
-                    context.fillRect(0, 0, 512, 512);
-                    context.fillStyle = '#333';
-                    context.font = 'bold 48px Playfair Display';
-                    context.textAlign = 'center';
-                    context.fillText('BACK SIDE', 256, 256);
-                    backTexture.image = canvas;
-                    backTexture.needsUpdate = true;
-                }
-            );
-
-            const geometry = new THREE.BoxGeometry(4, 5, 0.3);
-            const materials = [
-                new THREE.MeshStandardMaterial({ map: rightTexture, roughness: 0.4, metalness: 0.1 }),   // 右の面
-                new THREE.MeshStandardMaterial({ map: leftTexture, roughness: 0.4, metalness: 0.1 }),    // 左の面
-                new THREE.MeshStandardMaterial({ map: topTexture, roughness: 0.4, metalness: 0.1 }),     // 上の面
-                new THREE.MeshStandardMaterial({ map: bottomTexture, roughness: 0.4, metalness: 0.1 }), // 下の面
-                new THREE.MeshStandardMaterial({ map: frontTexture, roughness: 0.4, metalness: 0.1 }),    // 正面
-                new THREE.MeshStandardMaterial({ map: backTexture, roughness: 0.4, metalness: 0.1 }),     // 裏
-                new THREE.MeshStandardMaterial({ map: frontTexture, roughness: 0.4, metalness: 0.1 }),
-                new THREE.MeshStandardMaterial({ map: backTexture, roughness: 0.4, metalness: 0.1 })
-            ];
-            const artwork = new THREE.Mesh(geometry, materials);
-            scene.add(artwork);
-
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
-            scene.add(ambientLight);
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
-            directionalLight.position.set(5, 5, 5);
-            scene.add(directionalLight);
-            const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.1);
-            directionalLight2.position.set(-5, -5, -5);
-            scene.add(directionalLight2);
-
-            camera.position.z = 5;
-
-            let isDragging = false;
-            let previousMousePosition = { x: 0, y: 0 };
-            let autoRotate = true;
-
-            container.addEventListener('mousedown', e => {
-                isDragging = true;
-                autoRotate = false;
-                previousMousePosition = { x: e.clientX, y: e.clientY };
-            });
-            container.addEventListener('mousemove', e => {
-                if (!isDragging) return;
-                const deltaMove = {
-                    x: e.clientX - previousMousePosition.x,
-                    y: e.clientY - previousMousePosition.y
-                };
-                artwork.rotation.y += deltaMove.x * 0.01;
-                artwork.rotation.x += deltaMove.y * 0.01;
-                previousMousePosition = { x: e.clientX, y: e.clientY };
-            });
-            window.addEventListener('mouseup', () => { isDragging = false; });
-            container.addEventListener('mouseleave', () => { isDragging = false; });
-
-            function animate() {
-                requestAnimationFrame(animate);
-                if (autoRotate && !isDragging) {
-                    artwork.rotation.y += 0.002;
-                }
-                renderer.render(scene, camera);
-            }
-            animate();
-
-            window.addEventListener('resize', () => {
-                if (container) {
-                    camera.aspect = container.clientWidth / container.clientHeight;
-                    camera.updateProjectionMatrix();
-                    renderer.setSize(container.clientWidth, container.clientHeight);
-                }
-            });
-        }
-
-        const navLinks = document.querySelectorAll('nav ul li a');
-        const navToggle = document.getElementById('nav-toggle');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (navToggle.checked) {
-                    navToggle.checked = false;
-                }
-            });
-        });
+    <!-- JavaScript -->
+    <script type="module" src="./assets/js/main.js">
     </script>
 
-    <script>
-        const bgCanvas = document.getElementById('background-canvas');
-        if (bgCanvas) {
-            const ctx = bgCanvas.getContext('2d');
-            let mouseX = 0, mouseY = 0;
-            let particles = [];
-            let animationId;
-
-            function drawMonetBackground() {
-                const width = bgCanvas.width;
-                const height = bgCanvas.height;
-
-                const gradient = ctx.createLinearGradient(0, 0, width, height);
-                gradient.addColorStop(0, '#0d1a26');
-                gradient.addColorStop(0.5, '#2a4f6d');
-                gradient.addColorStop(1, '#000000');
-
-                ctx.fillStyle = gradient;
-                ctx.fillRect(0, 0, width, height);
-
-                if (particles.length === 0) {
-                    for (let i = 0; i < 50; i++) {
-                        particles.push({
-                            x: Math.random() * width,
-                            y: Math.random() * height,
-                            vx: (Math.random() - 0.5) * 0.5,
-                            vy: (Math.random() - 0.5) * 0.5,
-                            size: Math.random() * 8 + 2,
-                            opacity: Math.random() * 0.3 + 0.1,
-                            color: Math.floor(Math.random() * 3)
-                        });
-                    }
-                }
-
-                particles.forEach(particle => {
-                    const dx = mouseX - particle.x;
-                    const dy = mouseY - particle.y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-
-                    if (distance < 200) {
-                        const force = (200 - distance) / 200;
-                        particle.vx += dx * force * 0.0001;
-                        particle.vy += dy * force * 0.0001;
-                    }
-
-                    particle.x += particle.vx;
-                    particle.y += particle.vy;
-
-                    if (particle.x < 0 || particle.x > width) particle.vx *= -0.8;
-                    if (particle.y < 0 || particle.y > height) particle.vy *= -0.8;
-
-                    particle.vx *= 0.99;
-                    particle.vy *= 0.99;
-
-                    const colors = [
-                        { r: 116, g: 185, b: 255 },
-                        { r: 9, g: 132, b: 227 },
-                        { r: 108, g: 92, b: 231 }
-                    ];
-
-                    ctx.beginPath();
-                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(${colors[particle.color].r}, ${colors[particle.color].g}, ${colors[particle.color].b}, ${particle.opacity})`;
-                    ctx.fill();
-                });
-
-                if (mouseX > 0 && mouseY > 0) {
-                    const gradient = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, 150);
-                    gradient.addColorStop(0, 'rgba(255, 255, 255, 0.1)');
-                    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
-                    ctx.fillStyle = gradient;
-                    ctx.fillRect(0, 0, width, height);
-                }
-
-                const strokes = 3000;
-
-                for (let i = 0; i < strokes; i++) {
-                    const x = Math.random() * width;
-                    const y = Math.random() * height;
-                    const radius = Math.random() * 15 + 3;
-
-                    const colors = [
-                        { r: 116, g: 185, b: 255, a: 0.1 },
-                        { r: 9, g: 132, b: 227, a: 0.15 },
-                        { r: 108, g: 92, b: 231, a: 0.1 },
-                        { r: 162, g: 155, b: 254, a: 0.08 },
-                        { r: 255, g: 255, b: 255, a: 0.03 },
-                        { r: 45, g: 52, b: 54, a: 0.1 }
-                    ];
-
-                    const color = colors[Math.floor(Math.random() * colors.length)];
-
-                    ctx.beginPath();
-                    ctx.arc(x, y, radius, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`;
-                    ctx.fill();
-                }
-
-                for (let i = 0; i < 30; i++) {
-                    const x = Math.random() * width;
-                    const y = Math.random() * height;
-                    const radius = Math.random() * 80 + 40;
-
-                    const lightGradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
-                    lightGradient.addColorStop(0, 'rgba(255, 255, 255, 0.05)');
-                    lightGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
-
-                    ctx.beginPath();
-                    ctx.arc(x, y, radius, 0, Math.PI * 2);
-                    ctx.fillStyle = lightGradient;
-                    ctx.fill();
-                }
-            }
-
-            document.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-
-            function animateBackground() {
-                drawMonetBackground();
-                animationId = requestAnimationFrame(animateBackground);
-            }
-
-            function resizeAndDraw() {
-                bgCanvas.width = window.innerWidth;
-                bgCanvas.height = window.innerHeight;
-                particles = [];
-                if (animationId) {
-                    cancelAnimationFrame(animationId);
-                }
-                animateBackground();
-            }
-
-            resizeAndDraw();
-            window.addEventListener('resize', resizeAndDraw);
-
-            window.addEventListener('beforeunload', () => {
-                if (animationId) {
-                    cancelAnimationFrame(animationId);
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
